@@ -1,0 +1,77 @@
+<?php 
+$url_base = "../../"; 
+$url_folder = "../";
+$url_inside = "router/";
+include $url_base."admin/config.php";
+?>
+<?php include $url_inside."links.php"?>
+<body>
+    <?php include $url_folder."layouts/header.php"?>
+
+    <div id="section" class="section_contract">
+        <div class="img_content">Contract</div>
+        <div class="container">
+            <div class="sending">
+                <form action="<?php echo $url_inside."sending_mail.php"?>" method="POST">
+                    <h4 class="text">Send Us A Message</h4>
+                    <div>
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <input type="email" name="email" placeholder="Your Email Address">
+                    </div>
+                    <div>
+                        <textarea name="message" id="" 
+                        placeholder="How Can We Help?"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contract_info">
+                <div class="info_item address">
+                    <div class="icon"> <!-- icon -->
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="text">
+                        <div class="content">Address</div>
+                        <div class="title">
+                        1 Nguyễn Đổng Chi, Quận Nam, Số 9 Đ. Liên Cơ, Cầu Diễn, Từ Liêm, Hà Nội 10000, Việt Nam
+                        </div>
+                    </div>
+                </div>
+                <div class="info_item phone">
+                    <div class="icon"> <!-- icon -->
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <div class="content">Lets Talk</div>
+                        <div class="title">
+                            +84 86 255 1396
+                        </div>
+                    </div>
+                </div>
+                <div class="info_item email">
+                    <div class="icon"> <!-- icon -->
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="text">
+                        <div class="content">Sale Support</div>
+                        <div class="title">
+                            vietcong1508@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8376821259562!2d105.76256691485459!3d21.039179785992733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c751536bd3%3A0x43f9c617417f860c!2zVHLGsOG7nW5nIFRp4buDdSBo4buNYyBD4bqndSBEaeG7hW4!5e0!3m2!1svi!2s!4v1670557796564!5m2!1svi!2s" width="100%" height="100%" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <?php include $url_folder."layouts/footer.php"?>
+
+    <script src="<?php echo $url_base?>js/main.js"></script>
+    <script src="<?php echo $url_base?>js/owl_carousel.js"></script>
+</body>
