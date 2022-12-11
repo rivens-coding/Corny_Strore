@@ -1,5 +1,5 @@
 This is Project of Group 12.
-We are Chu Tuan Binh, Nguyen Minh Phong
+We are Chu Tuan Binh, Nguyen Minh Phong.
 Our topic is building a website for fashion clothing online
 
 ![image](https://user-images.githubusercontent.com/78080819/206917743-32af2122-433c-4041-b248-334e605d8568.png)
